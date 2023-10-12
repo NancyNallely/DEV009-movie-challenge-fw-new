@@ -36,9 +36,12 @@
 }
 
 /* Estilo del título y año de lanzamiento */
+.movie-title{
+  font-size: 20px;
+}
 .movie-info {
   margin-top: 10px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
   color: #270622;
 }
