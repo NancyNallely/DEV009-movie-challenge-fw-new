@@ -1,0 +1,7 @@
+/* Estilos para el contenedor de filtros */
+.filters-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; /* Espacio entre los componentes más pequeño */
+  }
+  

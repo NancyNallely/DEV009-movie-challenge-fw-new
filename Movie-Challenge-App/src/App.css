@@ -1,47 +1,12 @@
 /* App.css */
 
 
-/* Estilo para el logo */
-.logo {
-  box-shadow: 0 0 10px rgba(83, 78, 78, 0.5);
-  margin: 0 auto;
-  display: block;
-}
 
-/* Estilo para la cuadrícula de películas con fondo púrpura */
-.movie-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  background-color: #480b53a1; /* Fondo púrpura */
-  padding: 20px;
-}
 
-/* Estilo de la tarjeta (card) de película con sombras de colores alternos */
-.movie-card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
 
-/* Estilo del póster de película */
-.movie-poster {
-  width: 90%;
-  border-radius: 8px;
-  margin-top: 8%;
-}
 
-/* Estilo del título y año de lanzamiento */
-.movie-title{
-  font-size: 20px;
-}
-.movie-info {
-  margin-top: 10px;
-  font-weight: bold;
-  font-size: 15px;
-  color: #270622;
-}
+
+
+
+
+

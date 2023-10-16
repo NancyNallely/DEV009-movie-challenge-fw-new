@@ -1,0 +1,36 @@
+/* Estilo para la cuadrícula de películas con fondo púrpura */
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    background-color: #72267f67; /* Fondo púrpura */
+    padding: 20px;
+  }
+  
+  /* Estilo de la tarjeta (card) de película con sombras de colores alternos */
+  .movie-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  /* Estilo del póster de película */
+.movie-poster {
+    width: 85%;
+    border-radius: 8px;
+    margin-top: 8%;
+  }
+  
+  /* Estilo del título y año de lanzamiento */
+  .movie-title{
+    font-size: 20px;
+  }
+  .movie-info {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #270622;
+  }

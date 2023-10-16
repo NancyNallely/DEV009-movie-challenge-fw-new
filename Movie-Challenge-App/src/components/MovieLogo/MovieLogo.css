@@ -1,0 +1,6 @@
+/* Estilo para el logo */
+.logo {
+    box-shadow: 0 0 10px rgba(83, 78, 78, 0.5);
+    margin: 0 auto;
+    display: block;
+  }

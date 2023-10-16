@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import MovieCatalog from './components/MovieCatalog';
+import MovieCatalog from '../components/MovieCatalog/MovieCatalog';
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<MovieCatalog />} />
-          {/* Add more routes here if necessary */}
+    
         </Routes>
       </Router>
     </div>
