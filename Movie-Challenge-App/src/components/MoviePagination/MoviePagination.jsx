@@ -1,5 +1,5 @@
-
 import PropTypes from 'prop-types';
+import './MoviePagination.css';
 
 const Pagination = ({ currentPage, totalPages, onPageChange }) => {
   // Deshabilitar el botón "Anterior" si currentPage es 1

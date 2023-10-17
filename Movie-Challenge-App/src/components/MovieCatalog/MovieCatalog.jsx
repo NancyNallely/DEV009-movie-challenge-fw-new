@@ -7,7 +7,7 @@ import MovieList from '../MovieList/MovieList';
 import Pagination from '../MoviePagination/MoviePagination';
 import FilterMovies from '../FilterMovies/FilterMovies';
 import SortMovies from '../SortMovies/SortMovies';
-import '../App.css';
+import './MovieCatalog.css';
 
 const MovieCatalog = () => {
   const [movies, setMovies] = useState([]);

@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
-import '../App.css'; // Agregar importación del archivo CSS
+import './FilterMovies.css';
 
 const FilterMovies = ({ genres, selectedGenre, onGenreChange }) => {
   return (
     <div className="FilterMovies">
-      <label>Filtrar por Género:</label>
-      <select value={selectedGenre} onChange={onGenreChange}>
+      <label htmlFor="genreSelect">Filtrar por Género:</label>
+      <select id="genreSelect" value={selectedGenre} onChange={onGenreChange}>
         <option value="">Todos los géneros</option>
         {genres.map((genre) => (
           <option key={genre.id} value={genre.id}>

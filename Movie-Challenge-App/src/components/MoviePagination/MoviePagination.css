@@ -1,0 +1,43 @@
+/* MoviePagination.css */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .pagination button {
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1px solid #8f168b; /* Borde azul */
+    border-radius: 10px;
+    color: #6f0e6db8;
+    background-color: #fff; /* Fondo blanco */
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0 5px;
+  }
+  
+  .pagination button[disabled] {
+    background-color: #f0ebeb; /* Fondo gris para botones deshabilitados */
+    color: #ccc; /* Texto gris para botones deshabilitados */
+    border: 1px solid #ccc; /* Borde gris para botones deshabilitados */
+  }
+  
+  .pagination span {
+    padding: 10px 15px;
+    border: 1px solid #a74c92; /* Borde azul */
+    border-radius: 10px;
+    color: #551751d1;
+    background-color: #fff; /* Fondo blanco */
+    margin: 0 5px;
+  }
+  
+  .pagination button:hover {
+    background-color: #3d093972;
+    color: #fff;
+  }
+  
+  
+  

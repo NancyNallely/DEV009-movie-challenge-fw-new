@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import './MovieList.css';
 
 const MovieList = ({ movies, genreData }) => {
   if (!Array.isArray(movies) || movies.length === 0) {

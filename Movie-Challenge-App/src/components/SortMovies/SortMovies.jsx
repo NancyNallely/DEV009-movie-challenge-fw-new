@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import '../App.css'; // Asegúrate de importar tu archivo CSS aquí
+import './SortMovies.css';
 
 const SortMovies = ({ selectedSort, onSortChange }) => {
   return (
