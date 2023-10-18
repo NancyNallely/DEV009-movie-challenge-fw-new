@@ -2,6 +2,21 @@
 
 Todas las actualizaciones importantes del proyecto se documentan en este archivo.
 
+## [Versión 0.2.2] - 2023-10-17
+
+### Sprint learning
+Aprendi de que manera funciona el router para componentes, tambien la parte de como generar los filtros con react y el ordenar por.
+
+### Changed
+- Se agregan más campos para la card
+
+### Added
+- Actualización de css
+- Se agrega routeo
+- Se implementa codigo en la paginación
+- Se agregan componentes de la hu2
+- Se aplica estilo a componentes de la hu2
+- Se agrega actualización de cambios en Changelog
 
 ## [Versión 0.1.1] - 2023-10-10
 

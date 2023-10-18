@@ -3,7 +3,7 @@ import './SortMovies.css';
 
 const SortMovies = ({ selectedSort, onSortChange }) => {
   return (
-    <div className="FilterMovies"> {/* Asigna la clase aquí */}
+    <div className="FilterMovies"> 
       <label>Ordenar por:</label>
       <select value={selectedSort} onChange={onSortChange}>
         <option value="popularity.desc">Popularidad Descendente</option>
