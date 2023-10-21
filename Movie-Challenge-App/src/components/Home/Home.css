@@ -1,0 +1,93 @@
+/* Home.css */
+
+/* Fondo de pantalla */
+body {
+    background-image: url('../../imagenes/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    color: white;
+}
+
+/* Capa traslúcida para superponer toda la pantalla */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(65, 13, 67, 0.732);
+    z-index: -1;
+}
+
+/* Estilo para el título con efecto 3D y sombra */
+.title-3d {
+    font-family: 'OrbitRacerOrbitRacer';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 80px;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 6px rgba(118, 34, 125, 0.66);
+    text-align: center;
+}
+
+/* Estilo para el texto manuscrito con animación y efecto de izquierda a derecha */
+.manuscrito {
+    font-family: 'cursive', 'Zapfino', 'Brush Script MT', 'Lobster';
+    font-size: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid white;
+    animation: typing 4s steps(32, end);
+    text-align: center;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* Estilo para el contenedor del botón */
+.content-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-container {
+    position: relative;
+    top: 100px;
+}
+
+/* Estilo para el botón de Catálogo de Películas */
+.catalog-button {
+    display: block;
+    font-family: 'OrbitRacerOrbitRacer';
+    padding: 15px 30px;
+    background-color: #eae0ebfb;
+    color: rgb(124, 23, 130);
+    border: none;
+    border-radius: 8px;
+    font-size: 40px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.3s, background-color 0.3s; /* Agregamos transiciones para efecto de escala y cambio de color */
+
+    /* Efecto de sombra suave */
+    box-shadow: 2px 2px 6px rgba(124, 23, 130, 0.3);
+}
+
+.catalog-button:hover {
+    transform: scale(1.05);
+    background-color: #a82d9efb; /* Cambiamos el color de fondo al pasar el mouse */
+    color: white; /* Cambiamos el color del texto al pasar el mouse */
+    box-shadow: 4px 4px 8px rgba(124, 23, 130, 0.5); /* Aumentamos el efecto de sombra al pasar el mouse */
+}
