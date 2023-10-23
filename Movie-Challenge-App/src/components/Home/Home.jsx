@@ -1,6 +1,5 @@
-// Importa las dependencias necesarias
 import { Link } from 'react-router-dom';
-import './Home.css'; // Importa el archivo CSS aquí
+import './Home.css';
 
 const Home = () => {
   return (

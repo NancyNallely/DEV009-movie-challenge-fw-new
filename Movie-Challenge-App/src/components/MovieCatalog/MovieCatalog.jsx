@@ -1,5 +1,6 @@
 // MovieCatalog.jsx
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import PropTypes from 'prop-types';
 import Logo from '../MovieLogo/MovieLogo';
@@ -19,7 +20,7 @@ const MovieCatalog = () => {
 
   useEffect(() => {
     const apiKey = 'd88c3dce489bfe59e2bf99fbc55f8c24';
-    const apiUrl = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&page=${page}&with_genres=${selectedGenre}&sort_by=${selectedSort}`;
+    const apiUrl = `https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&api_key=${apiKey}&language=es-MX&page=${page}&with_genres=${selectedGenre}&sort_by=${selectedSort}`;
 
     const headers = {
       Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkODhjM2RjZTQ4OWJmZTU5ZTJiZjk5ZmJjNTVmOGMyNCIsInN1YiI6IjY1MWI5MTU3OWQ1OTJjMDEwMmMxMTQzYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.-HHfX_zSjMCUUdwuJtaivUGhDEYndIG-h9rg2LiNteg',
@@ -59,9 +60,14 @@ const MovieCatalog = () => {
   };
 
   return (
-    <div>
+    <div className='catalog-container'>
       <Logo />
       <h1>Catálogo de Películas</h1>
+      <div className="home">
+      <Link to="/" className="inicio">
+        Volver al inicio
+      </Link>
+      </div>
       <div className="filters-container">
         <FilterMovies
           genres={genreData}

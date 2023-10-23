@@ -1,48 +1,53 @@
 /* MovieList.css */
 
-/* Estilo para la cuadrícula de películas con fondo púrpura */
+/* Estilo de la cuadrícula de películas con fondo púrpura */
 .movie-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  background-color: #72267f67; /* Fondo púrpura */
+  background-color: #650f7636; /* Fondo púrpura */
   padding: 20px;
 }
 
 /* Estilo de la tarjeta (card) de película con sombras de colores alternos */
 .movie-card {
-  border: 1px solid #ccc;
+  border: 1px solid #ebdef0;
   border-radius: 8px;
   padding: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+  transform: perspective(300px) rotateX(0deg) rotateY(0deg);
   transition: transform 0.5s, box-shadow 0.5s;
+  width: 100%; /* Ocupa el ancho completo del contenedor */
 }
 
 /* Estilo del póster de película */
 .movie-poster {
-  width: 85%;
+  max-width: 90%; /* Ajusta el tamaño máximo del póster al ancho de la tarjeta */
+  height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
   border-radius: 8px;
   margin-top: 8%;
 }
 
 /* Estilo del título y año de lanzamiento */
 .movie-title {
-  font-size: 20px;
+  font-size: 16px; /* Reducimos el tamaño del título */
+  font-family: serif;
+  color: rgb(71, 19, 71);
 }
 
 .movie-info {
   margin-top: 10px;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 14px; /* Reducimos el tamaño de la información */
+  font-family: serif;
   color: #270622;
 }
 
 /* Efecto 3D en hover */
 .movie-card:hover {
   transform: perspective(1000px) rotateX(-10deg) rotateY(10deg);
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 20px rgba(95, 26, 93, 0.819);
 }

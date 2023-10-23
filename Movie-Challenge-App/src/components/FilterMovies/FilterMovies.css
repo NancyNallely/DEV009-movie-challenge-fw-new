@@ -10,7 +10,8 @@
   }
   
   .FilterMovies label {
-    font-size: 18px;
+    font-size: 22px;
+    font-family:'erif';
     font-weight: bold;
     display: block;
     margin-bottom: 8px; /* Espacio inferior más pequeño */
@@ -19,13 +20,14 @@
   .FilterMovies select {
     width: 100%;
     padding: 10px;
-    font-size: 16px;
-    border: 2px solid #a6c4e1;
+    font-size: 20px;
+    font-family: 'erif';
+    border: 2px solid #4b0959;
     border-radius: 5px;
-    background-color: #f4f8fa;
+    background-color: #cdb3d1;
   }
   
   .FilterMovies select:hover {
-    border-color: #4f91c3;
+    border-color: #c7afd0;
     transition: border-color 0.3s;
   }

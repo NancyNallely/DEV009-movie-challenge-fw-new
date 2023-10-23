@@ -1,9 +1,47 @@
 /* MovieCatalog.css */
 
+.catalog-container {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 1) 200px, rgba(242, 206, 241, 0.987) 10px);
+}
+
+.inicio{
+  font-family: serif;
+  font-size: 30px;
+  text-decoration: none;
+}
+.home {
+  display: block;
+  width: 188px;
+  height: 40px;
+  padding: 5px 10px;
+  background-color: #9241997d;
+  color: rgb(242, 234, 242);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  box-shadow: 8px 8px 9px rgba(146, 86, 146, 0.3);
+  margin: 0 auto; /* Centra el botón horizontalmente en su contenedor */
+}
+
+
+.home:hover {
+  transform: scale(1.05);
+  background-color: #d195cc8e;
+  color: rgb(72, 7, 69);
+  box-shadow: 4px 4px 8px rgba(124, 23, 130, 0.5);
+}
+
 /* Estilos para el contenedor de filtros */
 .filters-container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px; /* Espacio entre los componentes más pequeño */
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  /* Espacio entre los componentes más pequeño */
+}
+
+h1 {
+  font-family: serif;
+  font-size: 50px;
+  color: rgb(58, 24, 90);
+}

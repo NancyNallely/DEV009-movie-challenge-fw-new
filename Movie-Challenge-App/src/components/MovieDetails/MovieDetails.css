@@ -1,0 +1,54 @@
+/* MovieDetails.css */
+.movie-details-container {
+  display: grid;
+  background-color: rgba(242, 206, 241, 0.987);
+  grid-template-columns: 1fr 2fr; /* Dos columnas, una para la imagen y otra para la información */
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.back-link {
+  text-decoration: none;
+  color: #3b1351;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 10px;
+  text-align: left;
+  grid-column: span 2; /* Ocupa ambas columnas */
+}
+
+.movie-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.movie-poster {
+  width: 350px; /* Tamaño del póster */
+  height: auto; /* Altura automática para mantener la proporción */
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s; /* Transiciones para transform y sombra */
+}
+
+.movie-poster:hover {
+  transform: scale(1.1); /* Hace que el póster se agrande un 10% en hover */
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada en hover */
+}
+
+
+/* Estilos para la información de la película */
+.movie-details {
+  text-align: left;
+  font-size: 25px;
+  font-family: serif;
+  color: #3b1351;
+  padding: 20px; /* Espacio interior para la información */
+}
+
+/* Estilos para la sinopsis */
+.movie-details-container .movie-description {
+  text-align: left;
+  font-size: 18px;
+}
