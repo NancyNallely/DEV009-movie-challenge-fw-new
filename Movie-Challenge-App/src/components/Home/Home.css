@@ -1,15 +1,17 @@
 /* Home.css */
 
 /* Fondo de pantalla */
-body {
-    background-image: url('../../imagenes/fondo.jpg');
-    background-size: cover;
+.main-content {
+    position: absolute;
+    background: url('../../imagenes/fondo.jpg');
     background-position: center;
+    background-size: cover;
     background-attachment: fixed;
     margin: 0;
     padding: 0;
-    position: relative;
-    color: white;
+    color: #fff;
+    height: 100%;
+    width: 100%;
 }
 
 /* Capa traslúcida para superponer toda la pantalla */
@@ -19,8 +21,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(65, 13, 67, 0.732);
-    z-index: -1;
+    background-color: rgba(78, 13, 81, 0.361);
 }
 
 /* Estilo para el título con efecto 3D y sombra */
@@ -30,8 +31,9 @@ body {
     font-style: normal;
     font-size: 80px;
     text-transform: uppercase;
-    text-shadow: 4px 4px 6px rgba(118, 34, 125, 0.66);
+    text-shadow: 4px 4px 6px rgba(75, 7, 83, 0.809);
     text-align: center;
+    color: white;
 }
 
 /* Estilo para el texto manuscrito con animación y efecto de izquierda a derecha */
@@ -40,9 +42,10 @@ body {
     font-size: 40px;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 1px solid white;
+    border-right: 1px solid rgb(73, 7, 80);
     animation: typing 4s steps(32, end);
     text-align: center;
+    color: #480c42;
 }
 
 @keyframes typing {
@@ -57,14 +60,16 @@ body {
 
 /* Estilo para el contenedor del botón */
 .content-center {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    top:-60px;
 }
 
 .button-container {
     position: relative;
-    top: 100px;
+    top: 170px;
 }
 
 /* Estilo para el botón de Catálogo de Películas */
