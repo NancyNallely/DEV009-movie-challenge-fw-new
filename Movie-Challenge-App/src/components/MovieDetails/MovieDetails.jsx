@@ -42,10 +42,10 @@ function MovieDetails() {
       </div>
       <div className='movie-details'>
         <p>Título Original: {movie.original_title}</p>
-        <p>Año de Lanzamiento: {movie.release_date}</p>
-        <p>Géneros: {movie.genres.map((genre) => genre.name).join(', ')}</p>
-        <p>Promedio de Votación: {movie.vote_average}</p>
-        <p>Total de Votos: {movie.vote_count}</p>
+        <p> <i className="fa-solid fa-calendar-days" style={{ color: "#ba12a3" }}></i> Año de Lanzamiento: {movie.release_date}</p>
+        <p> <i className="fa-solid fa-film" style={{ color: "#ba12a3" }}></i> Géneros: {movie.genres.map((genre) => genre.name).join(', ')}</p>
+        <p> <i className="fa-solid fa-square-poll-vertical" style={{ color: "#ba12a3" }}></i> Promedio de Votación: {movie.vote_average}</p>
+        <p> <i className="fa-solid fa-star" style={{ color: "#ba12a3" }}></i> Total de Votos: {movie.vote_count}</p>
         <p>Sinopsis: {movie.overview}</p>
       </div>
     </div>

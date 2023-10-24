@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Josefin+Sans:ital,wght@0,600;0,700;1,600;1,700&family=Quintessential&display=swap');
 /* FilterMovies.css */
 
 /* Estilos para FilterMovies */
@@ -10,8 +11,8 @@
   }
   
   .FilterMovies label {
-    font-size: 22px;
-    font-family:'erif';
+    font-size: 18px;
+    font-family: 'Aclonica', sans-serif;
     font-weight: bold;
     display: block;
     margin-bottom: 8px; /* Espacio inferior más pequeño */
@@ -20,8 +21,8 @@
   .FilterMovies select {
     width: 100%;
     padding: 10px;
-    font-size: 20px;
-    font-family: 'erif';
+    font-size: 18px;
+    font-family: 'Aclonica', sans-serif;
     border: 2px solid #4b0959;
     border-radius: 5px;
     background-color: #cdb3d1;

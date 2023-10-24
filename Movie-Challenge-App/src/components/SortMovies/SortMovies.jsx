@@ -4,8 +4,8 @@ import './SortMovies.css';
 const SortMovies = ({ selectedSort, onSortChange }) => {
   return (
     <div className="FilterMovies"> 
-      <label>Ordenar por:</label>
-      <select value={selectedSort} onChange={onSortChange}>
+      <label><i className="fa-solid fa-sort" style={{ color: "#ba12a3" }}></i> Ordenar por:</label>
+      <select value={selectedSort} onChange={onSortChange} aria-label="Ordenar por">
         <option value="popularity.desc">Popularidad Descendente</option>
         <option value="popularity.asc">Popularidad Ascendente</option>
         <option value="release_date.desc">Fecha de Lanzamiento Descendente</option>

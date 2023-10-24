@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1698159522352" clover="3.2.0">
+  <project timestamp="1698159522352" name="All files">
+    <metrics statements="74" coveredstatements="60" conditionals="9" coveredconditionals="6" methods="20" coveredmethods="10" elements="103" coveredelements="76" complexity="0" loc="74" ncloc="74" packages="6" files="6" classes="6"/>
+    <package name="FilterMovies">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="FilterMovies.jsx" path="C:\Users\Usuario\Documents\Movie Challenge\DEV009-movie-challenge-fw-new\Movie-Challenge-App\src\components\FilterMovies\FilterMovies.jsx">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="11" count="6" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="MovieCatalog">
+      <metrics statements="38" coveredstatements="32" conditionals="3" coveredconditionals="0" methods="9" coveredmethods="4"/>
+      <file name="MovieCatalog.jsx" path="C:\Users\Usuario\Documents\Movie Challenge\DEV009-movie-challenge-fw-new\Movie-Challenge-App\src\components\MovieCatalog\MovieCatalog.jsx">
+        <metrics statements="38" coveredstatements="32" conditionals="3" coveredconditionals="0" methods="9" coveredmethods="4"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="49" count="0" type="cond" truecount="0" falsecount="3"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="94" count="1" type="stmt"/>
+        <line num="98" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="MovieList">
+      <metrics statements="14" coveredstatements="8" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="1"/>
+      <file name="MovieList.jsx" path="C:\Users\Usuario\Documents\Movie Challenge\DEV009-movie-challenge-fw-new\Movie-Challenge-App\src\components\MovieList\MovieList.jsx">
+        <metrics statements="14" coveredstatements="8" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="3" type="cond" truecount="3" falsecount="0"/>
+        <line num="10" count="1" type="cond" truecount="3" falsecount="0"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="63" count="2" type="stmt"/>
+        <line num="68" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="MovieLogo">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="MovieLogo.jsx" path="C:\Users\Usuario\Documents\Movie Challenge\DEV009-movie-challenge-fw-new\Movie-Challenge-App\src\components\MovieLogo\MovieLogo.jsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="MoviePagination">
+      <metrics statements="9" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+      <file name="MoviePagination.jsx" path="C:\Users\Usuario\Documents\Movie Challenge\DEV009-movie-challenge-fw-new\Movie-Challenge-App\src\components\MoviePagination\MoviePagination.jsx">
+        <metrics statements="9" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="37" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="SortMovies">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="SortMovies.jsx" path="C:\Users\Usuario\Documents\Movie Challenge\DEV009-movie-challenge-fw-new\Movie-Challenge-App\src\components\SortMovies\SortMovies.jsx">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="25" count="3" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

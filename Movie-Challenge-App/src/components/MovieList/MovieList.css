@@ -1,4 +1,4 @@
-/* MovieList.css */
+/* Estilos MovieList.css
 
 /* Estilo de la cuadrícula de películas con fondo púrpura */
 .movie-grid {
@@ -34,15 +34,17 @@
 /* Estilo del título y año de lanzamiento */
 .movie-title {
   font-size: 16px; /* Reducimos el tamaño del título */
-  font-family: serif;
+  font-family: 'Aclonica', sans-serif;
   color: rgb(71, 19, 71);
+  text-decoration: none;
 }
 
 .movie-info {
   margin-top: 10px;
   font-weight: bold;
   font-size: 14px; /* Reducimos el tamaño de la información */
-  font-family: serif;
+  font-family: 'Aclonica', sans-serif;
+  text-decoration: none;
   color: #270622;
 }
 

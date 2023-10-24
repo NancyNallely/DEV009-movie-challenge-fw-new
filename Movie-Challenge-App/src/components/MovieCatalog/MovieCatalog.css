@@ -1,18 +1,26 @@
 /* MovieCatalog.css */
 
 .catalog-container {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 1) 200px, rgba(242, 206, 241, 0.987) 10px);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 1) 180px, rgba(242, 206, 241, 0.987) 10px);
 }
 
 .inicio{
-  font-family: serif;
-  font-size: 30px;
+  font-family: 'Aclonica', sans-serif;
+  font-size: 18px;
   text-decoration: none;
 }
+
+.catalog-container > h1 {
+  position: absolute;
+  top: 168px;
+  right: 60%;
+  width: 500px; 
+}
+
 .home {
   display: block;
-  width: 188px;
-  height: 40px;
+  width: 180px;
+  height: 30px;
   padding: 5px 10px;
   background-color: #9241997d;
   color: rgb(242, 234, 242);
@@ -21,8 +29,12 @@
   cursor: pointer;
   transition: transform 0.3s, background-color 0.3s;
   box-shadow: 8px 8px 9px rgba(146, 86, 146, 0.3);
-  margin: 0 auto; /* Centra el botón horizontalmente en su contenedor */
+  position: absolute;
+  top: 280px;
+  right: 80%; 
+  margin: -40px;
 }
+
 
 
 .home:hover {
@@ -35,13 +47,13 @@
 /* Estilos para el contenedor de filtros */
 .filters-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin-bottom: 10px;
   /* Espacio entre los componentes más pequeño */
 }
 
 h1 {
-  font-family: serif;
-  font-size: 50px;
-  color: rgb(58, 24, 90);
+  font-family: 'Aclonica', sans-serif;
+  font-size: 30px;
+  color: #681D96;
 }

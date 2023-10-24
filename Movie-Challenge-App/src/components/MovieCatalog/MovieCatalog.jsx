@@ -65,7 +65,7 @@ const MovieCatalog = () => {
       <h1>Catálogo de Películas</h1>
       <div className="home">
       <Link to="/" className="inicio">
-        Volver al inicio
+      <i className="fa-solid fa-house" style={{ color: "#ba12a3" }}></i>  Volver al inicio
       </Link>
       </div>
       <div className="filters-container">

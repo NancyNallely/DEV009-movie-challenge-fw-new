@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Josefin+Sans:ital,wght@0,600;0,700;1,600;1,700&family=Lobster&family=Quintessential&display=swap');
 /* Home.css */
 
 /* Fondo de pantalla */
@@ -21,31 +22,32 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(78, 13, 81, 0.361);
+    background-color: rgba(149, 63, 154, 0.361);
 }
 
 /* Estilo para el título con efecto 3D y sombra */
 .title-3d {
-    font-family: 'OrbitRacerOrbitRacer';
+    font-family: 'Aclonica', sans-serif;
     font-weight: normal;
     font-style: normal;
-    font-size: 80px;
+    font-size: 50px;
     text-transform: uppercase;
-    text-shadow: 4px 4px 6px rgba(75, 7, 83, 0.809);
+    text-shadow: 4px 4px 6px rgba(238, 229, 238, 0.809);
     text-align: center;
-    color: white;
+    color: rgba(110, 17, 107, 0.697);
 }
 
 /* Estilo para el texto manuscrito con animación y efecto de izquierda a derecha */
 .manuscrito {
-    font-family: 'cursive', 'Zapfino', 'Brush Script MT', 'Lobster';
-    font-size: 40px;
+    font-family: 'Lobster', sans-serif;
+    font-size: 30px;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 1px solid rgb(73, 7, 80);
+    border-right: 1px solid rgb(165, 123, 170);
     animation: typing 4s steps(32, end);
     text-align: center;
     color: #480c42;
+    margin-top: 90px;
 }
 
 @keyframes typing {
@@ -75,13 +77,13 @@
 /* Estilo para el botón de Catálogo de Películas */
 .catalog-button {
     display: block;
-    font-family: 'OrbitRacerOrbitRacer';
+    font-family: 'Aclonica', sans-serif;
     padding: 15px 30px;
     background-color: #eae0ebfb;
     color: rgb(124, 23, 130);
     border: none;
     border-radius: 8px;
-    font-size: 40px;
+    font-size: 30px;
     cursor: pointer;
     text-decoration: none;
     transition: transform 0.3s, background-color 0.3s; /* Agregamos transiciones para efecto de escala y cambio de color */

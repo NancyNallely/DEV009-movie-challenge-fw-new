@@ -13,7 +13,8 @@
   text-decoration: none;
   color: #3b1351;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 20px;
+  font-family: 'Aclonica', sans-serif;
   margin-top: 10px;
   text-align: left;
   grid-column: span 2; /* Ocupa ambas columnas */
@@ -41,8 +42,8 @@
 /* Estilos para la información de la película */
 .movie-details {
   text-align: left;
-  font-size: 25px;
-  font-family: serif;
+  font-size: 15px;
+  font-family: 'Aclonica', sans-serif;
   color: #3b1351;
   padding: 20px; /* Espacio interior para la información */
 }
@@ -50,5 +51,6 @@
 /* Estilos para la sinopsis */
 .movie-details-container .movie-description {
   text-align: left;
-  font-size: 18px;
+  font-size: 20px;
+  font-family: 'Aclonica', sans-serif;
 }
