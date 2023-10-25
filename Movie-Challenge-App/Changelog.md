@@ -2,6 +2,21 @@
 
 Todas las actualizaciones importantes del proyecto se documentan en este archivo.
 
+## [Versión 0.2.2] - 2023-10-24
+
+### Sprint learning
+Empece a trabajar la parte de test con react, aprendi a realizar test con componentes.
+
+### Changed
+- Se agrega el componente Home
+
+### Added
+- Se da estilo al componente Home en css
+- Se agrega componente de la hu3
+- Se agregan estilos en css para la hu3
+- Se agregan test de la hu1 y de la hu2
+- Se agrega actualización de cambios en Changelog
+
 ## [Versión 0.2.2] - 2023-10-17
 
 ### Sprint learning
