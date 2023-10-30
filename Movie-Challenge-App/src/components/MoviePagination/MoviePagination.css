@@ -10,6 +10,7 @@
   
   .pagination button {
     text-decoration: none;
+    font-family: 'Aclonica', sans-serif;
     padding: 10px 15px;
     border: 1px solid #8f168b; /* Borde azul */
     border-radius: 10px;
@@ -27,6 +28,7 @@
   
   .pagination span {
     padding: 10px 15px;
+    font-family: 'Aclonica', sans-serif;
     border: 1px solid #a74c92; /* Borde azul */
     border-radius: 10px;
     color: #551751d1;

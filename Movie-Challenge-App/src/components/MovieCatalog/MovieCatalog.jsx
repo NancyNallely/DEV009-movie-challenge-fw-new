@@ -1,4 +1,3 @@
-// MovieCatalog.jsx
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
@@ -8,6 +7,7 @@ import MovieList from '../MovieList/MovieList';
 import Pagination from '../MoviePagination/MoviePagination';
 import FilterMovies from '../FilterMovies/FilterMovies';
 import SortMovies from '../SortMovies/SortMovies';
+import { useMovieContext } from '../MovieContext/MovieContext';
 import './MovieCatalog.css';
 
 const MovieCatalog = () => {
@@ -15,8 +15,7 @@ const MovieCatalog = () => {
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const [genreData, setGenreData] = useState([]);
-  const [selectedGenre, setSelectedGenre] = useState('');
-  const [selectedSort, setSelectedSort] = useState('popularity.desc');
+  const { selectedGenre, setSelectedGenre, selectedSort, setSelectedSort } = useMovieContext();
 
   useEffect(() => {
     const apiKey = 'd88c3dce489bfe59e2bf99fbc55f8c24';
@@ -35,15 +34,18 @@ const MovieCatalog = () => {
         console.error('Error al obtener la lista de películas', error);
       });
 
-    const genreApiUrl = 'https://api.themoviedb.org/3/genre/movie/list?language=es';
-    axios.get(genreApiUrl, { headers })
-      .then((response) => {
-        setGenreData(response.data.genres);
-      })
-      .catch((error) => {
-        console.error('Error al obtener datos de géneros', error);
-      });
-  }, [page, selectedGenre, selectedSort]);
+    // Solo ejecutar la llamada a la API de géneros la primera vez
+    if (genreData.length === 0) {
+      const genreApiUrl = 'https://api.themoviedb.org/3/genre/movie/list?language=es';
+      axios.get(genreApiUrl, { headers })
+        .then((response) => {
+          setGenreData(response.data.genres);
+        })
+        .catch((error) => {
+          console.error('Error al obtener datos de géneros', error);
+        });
+    }
+  }, [page, selectedGenre, selectedSort, genreData]);
 
   const handlePageChange = (newPage) => {
     if (newPage >= 1 && newPage <= totalPages) {
@@ -64,9 +66,9 @@ const MovieCatalog = () => {
       <Logo />
       <h1>Catálogo de Películas</h1>
       <div className="home">
-      <Link to="/" className="inicio">
-      <i className="fa-solid fa-house" style={{ color: "#ba12a3" }}></i>  Volver al inicio
-      </Link>
+        <Link to="/" className="inicio">
+          <i className="fa-solid fa-house" style={{ color: "#ba12a3" }}></i>  Volver al inicio
+        </Link>
       </div>
       <div className="filters-container">
         <FilterMovies

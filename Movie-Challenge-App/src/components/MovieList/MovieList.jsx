@@ -31,9 +31,12 @@ const MovieList = ({ movies, genreData }) => {
     '#9575cd',
   ];
 
+  // Filtra las películas que tienen póster
+  const moviesWithPoster = movies.filter((movie) => movie.poster_path);
+
   return (
     <div className="movie-grid">
-      {movies.map((movie, index) => (
+      {moviesWithPoster.map((movie, index) => (
         <Link to={`/movie/${movie.id}`} key={movie.id} className="movie-card">
           <div
             className="movie-card"
@@ -48,10 +51,10 @@ const MovieList = ({ movies, genreData }) => {
               <p className="movie-title" aria-label='Título de una película'>{movie.original_title}</p>
               <p className="movie-year">{movie.release_date.slice(0, 4)}</p>
               <p className="movie-genres">
-              <i className="fa-solid fa-film" style={{ color: "#ba12a3" }}></i> Géneros: {movie.genre_ids.map((genreId) => genreMap[genreId]).join(', ')}
+                <i className="fa-solid fa-film" style={{ color: "#ba12a3" }}></i> Géneros: {movie.genre_ids.map((genreId) => genreMap[genreId]).join(', ')}
               </p>
               <p className="movie-vote-average"><i className="fa-solid fa-square-poll-vertical" style={{ color: "#ba12a3" }}></i> Promedio de votación: {movie.vote_average}</p>
-              <p className="movie-vote-count"><i className="fa-solid fa-check-to-slot" style={{ color: "#ba12a3" }}></i> Total de votos: {movie.vote_count}</p>
+              <p className="movie-vote-count"><i className="fa-solid fa-star" style={{ color: "#ba12a3" }}></i> Total de votos: {movie.vote_count}</p>
             </div>
           </div>
         </Link>

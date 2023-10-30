@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import MovieList from './MovieList';
+import { MemoryRouter } from 'react-router-dom';
 
 const mockMovies = [
   {
@@ -40,6 +41,44 @@ describe('MovieList', () => {
     render(<MovieList movies={mockMovies} genreData={[]} />);
     const noGenreDataMessage = screen.getByText('No hay datos de género disponibles.');
     expect(noGenreDataMessage).toBeTruthy();
+  });
+
+
+  it('should render a list of movies with their respective information', () => {
+    const movies = [
+      {
+        id: 1,
+        original_title: 'Movie 1',
+        release_date: '2022-01-01',
+        genre_ids: [1, 2],
+        vote_average: 7.5,
+        vote_count: 100,
+      },
+      {
+        id: 2,
+        original_title: 'Movie 2',
+        release_date: '2022-02-01',
+        genre_ids: [3, 4],
+        vote_average: 8.0,
+        vote_count: 200,
+      },
+    ];
+    const genreData = [
+      { id: 1, name: 'Genre 1' },
+      { id: 2, name: 'Genre 2' },
+      { id: 3, name: 'Genre 3' },
+      { id: 4, name: 'Genre 4' },
+    ];
+
+    render(
+      <MemoryRouter>
+        <MovieList movies={movies} genreData={genreData} />
+      </MemoryRouter>
+    );
+
+    // Las expectativas
+    expect(screen.getByText('Movie 1')).toBeTruthy();
+    expect(screen.getByText('Movie 2')).toBeTruthy();
   });
 
 });

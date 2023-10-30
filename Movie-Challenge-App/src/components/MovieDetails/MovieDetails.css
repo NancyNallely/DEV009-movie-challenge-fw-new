@@ -41,12 +41,36 @@
 
 /* Estilos para la información de la película */
 .movie-details {
-  text-align: left;
+  position: relative;
+  text-align: justify;
   font-size: 15px;
   font-family: 'Aclonica', sans-serif;
-  color: #3b1351;
-  padding: 20px; /* Espacio interior para la información */
+  color: #ffffff;
+  padding: 20px;
+  background-color: #602e6c36;
+  box-shadow: 4px 4px 10px rgba(184, 19, 109, 0.365);
+  width: 80%;
+  animation: borderFlash 4s linear infinite;
 }
+
+@keyframes borderFlash {
+  0% {
+    box-shadow: -4px -4px 10px rgba(184, 19, 109, 0.365);
+  }
+  25% {
+    box-shadow: 4px -4px 10px rgba(184, 19, 109, 0.365);
+  }
+  50% {
+    box-shadow: 4px 4px 10px rgba(184, 19, 109, 0.365);
+  }
+  75% {
+    box-shadow: -4px 4px 10px rgba(184, 19, 109, 0.365);
+  }
+  100% {
+    box-shadow: -4px -4px 10px rgba(184, 19, 109, 0.365);
+  }
+}
+
 
 /* Estilos para la sinopsis */
 .movie-details-container .movie-description {
