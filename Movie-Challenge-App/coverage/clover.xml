@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1698721518339" clover="3.2.0">
-  <project timestamp="1698721518340" name="All files">
-    <metrics statements="85" coveredstatements="79" conditionals="20" coveredconditionals="17" methods="23" coveredmethods="18" elements="128" coveredelements="114" complexity="0" loc="85" ncloc="85" packages="7" files="7" classes="7"/>
+<coverage generated="1698794945544" clover="3.2.0">
+  <project timestamp="1698794945545" name="All files">
+    <metrics statements="106" coveredstatements="102" conditionals="21" coveredconditionals="18" methods="29" coveredmethods="25" elements="156" coveredelements="145" complexity="0" loc="106" ncloc="106" packages="9" files="9" classes="9"/>
     <package name="FilterMovies">
       <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
       <file name="FilterMovies.jsx" path="C:\Users\Usuario\Documents\Movie Challenge\DEV009-movie-challenge-fw-new\Movie-Challenge-App\src\components\FilterMovies\FilterMovies.jsx">
@@ -11,7 +11,17 @@
         <line num="4" count="2" type="stmt"/>
         <line num="11" count="6" type="stmt"/>
         <line num="20" count="2" type="stmt"/>
-        <line num="26" count="8" type="stmt"/>
+        <line num="26" count="6" type="stmt"/>
+      </file>
+    </package>
+    <package name="Home">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Home.jsx" path="C:\Users\Usuario\Documents\Movie Challenge\DEV009-movie-challenge-fw-new\Movie-Challenge-App\src\components\Home\Home.jsx">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
       </file>
     </package>
     <package name="MovieCatalog">
@@ -30,30 +40,30 @@
         <line num="10" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
-        <line num="14" count="6" type="stmt"/>
-        <line num="15" count="6" type="stmt"/>
-        <line num="16" count="6" type="stmt"/>
-        <line num="17" count="6" type="stmt"/>
-        <line num="18" count="6" type="stmt"/>
-        <line num="20" count="6" type="stmt"/>
-        <line num="21" count="5" type="stmt"/>
-        <line num="22" count="5" type="stmt"/>
-        <line num="24" count="5" type="stmt"/>
-        <line num="28" count="5" type="stmt"/>
-        <line num="30" count="2" type="stmt"/>
-        <line num="31" count="2" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
+        <line num="22" count="4" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
+        <line num="28" count="4" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
         <line num="34" count="2" type="stmt"/>
-        <line num="38" count="5" type="cond" truecount="3" falsecount="0"/>
+        <line num="38" count="4" type="cond" truecount="3" falsecount="0"/>
         <line num="39" count="4" type="stmt"/>
         <line num="40" count="4" type="stmt"/>
         <line num="42" count="1" type="stmt"/>
         <line num="45" count="2" type="stmt"/>
-        <line num="50" count="6" type="stmt"/>
+        <line num="50" count="4" type="stmt"/>
         <line num="51" count="0" type="cond" truecount="0" falsecount="3"/>
         <line num="52" count="0" type="stmt"/>
-        <line num="56" count="6" type="stmt"/>
+        <line num="56" count="4" type="stmt"/>
         <line num="57" count="0" type="stmt"/>
-        <line num="60" count="6" type="stmt"/>
+        <line num="60" count="4" type="stmt"/>
         <line num="61" count="0" type="stmt"/>
         <line num="96" count="1" type="stmt"/>
         <line num="100" count="4" type="stmt"/>
@@ -63,36 +73,59 @@
       <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="MovieContext.jsx" path="C:\Users\Usuario\Documents\Movie Challenge\DEV009-movie-challenge-fw-new\Movie-Challenge-App\src\components\MovieContext\MovieContext.jsx">
         <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
         <line num="7" count="6" type="stmt"/>
         <line num="8" count="6" type="stmt"/>
-        <line num="11" count="4" type="stmt"/>
-        <line num="12" count="4" type="stmt"/>
-        <line num="13" count="4" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="12" count="5" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="MovieDetails">
+      <metrics statements="17" coveredstatements="17" conditionals="1" coveredconditionals="1" methods="5" coveredmethods="4"/>
+      <file name="MovieDetails.jsx" path="C:\Users\Usuario\Documents\Movie Challenge\DEV009-movie-challenge-fw-new\Movie-Challenge-App\src\components\MovieDetails\MovieDetails.jsx">
+        <metrics statements="17" coveredstatements="17" conditionals="1" coveredconditionals="1" methods="5" coveredmethods="4"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="34" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="49" count="2" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
       </file>
     </package>
     <package name="MovieList">
-      <metrics statements="15" coveredstatements="13" conditionals="6" coveredconditionals="6" methods="5" coveredmethods="3"/>
+      <metrics statements="15" coveredstatements="15" conditionals="6" coveredconditionals="6" methods="5" coveredmethods="5"/>
       <file name="MovieList.jsx" path="C:\Users\Usuario\Documents\Movie Challenge\DEV009-movie-challenge-fw-new\Movie-Challenge-App\src\components\MovieList\MovieList.jsx">
-        <metrics statements="15" coveredstatements="13" conditionals="6" coveredconditionals="6" methods="5" coveredmethods="3"/>
+        <metrics statements="15" coveredstatements="15" conditionals="6" coveredconditionals="6" methods="5" coveredmethods="5"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
         <line num="3" count="2" type="stmt"/>
         <line num="5" count="2" type="stmt"/>
-        <line num="6" count="8" type="cond" truecount="3" falsecount="0"/>
-        <line num="10" count="3" type="cond" truecount="3" falsecount="0"/>
+        <line num="6" count="7" type="cond" truecount="3" falsecount="0"/>
+        <line num="10" count="2" type="cond" truecount="3" falsecount="0"/>
         <line num="14" count="1" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
         <line num="16" count="4" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
         <line num="35" count="2" type="stmt"/>
-        <line num="40" count="0" type="stmt"/>
-        <line num="54" count="0" type="stmt"/>
+        <line num="40" count="2" type="stmt"/>
+        <line num="54" count="4" type="stmt"/>
         <line num="66" count="2" type="stmt"/>
-        <line num="71" count="9" type="stmt"/>
+        <line num="71" count="7" type="stmt"/>
       </file>
     </package>
     <package name="MovieLogo">
@@ -100,7 +133,7 @@
       <file name="MovieLogo.jsx" path="C:\Users\Usuario\Documents\Movie Challenge\DEV009-movie-challenge-fw-new\Movie-Challenge-App\src\components\MovieLogo\MovieLogo.jsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="2" count="2" type="stmt"/>
-        <line num="10" count="7" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
       </file>
     </package>
     <package name="MoviePagination">
@@ -110,12 +143,12 @@
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
-        <line num="6" count="13" type="stmt"/>
-        <line num="9" count="13" type="stmt"/>
+        <line num="6" count="12" type="stmt"/>
+        <line num="9" count="12" type="stmt"/>
         <line num="14" count="1" type="stmt"/>
         <line num="21" count="1" type="stmt"/>
         <line num="31" count="2" type="stmt"/>
-        <line num="37" count="14" type="stmt"/>
+        <line num="37" count="12" type="stmt"/>
       </file>
     </package>
     <package name="SortMovies">
@@ -126,7 +159,7 @@
         <line num="2" count="2" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
         <line num="26" count="2" type="stmt"/>
-        <line num="31" count="8" type="stmt"/>
+        <line num="31" count="6" type="stmt"/>
       </file>
     </package>
   </project>

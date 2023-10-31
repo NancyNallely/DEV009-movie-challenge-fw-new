@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">88.23% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>15/17</span>
+                <span class='fraction'>17/17</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">60% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>3/5</span>
+                <span class='fraction'>5/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">86.66% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>13/15</span>
+                <span class='fraction'>15/15</span>
             </div>
         
             
@@ -139,11 +139,11 @@
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -173,7 +173,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -187,7 +187,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -204,7 +204,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './MovieList.css';
@@ -243,8 +243,8 @@ const MovieList = ({ movies, genreData }) =&gt; {
 &nbsp;
   return (
     &lt;div className="movie-grid"&gt;
-      {moviesWithPoster.map(<span class="fstat-no" title="function not covered" >(m</span>ovie, index) =&gt; (
-<span class="cstat-no" title="statement not covered" >        &lt;Link to={`/movie/${movie.id}`} key={movie.id} c</span>lassName="movie-card"&gt;
+      {moviesWithPoster.map((movie, index) =&gt; (
+        &lt;Link to={`/movie/${movie.id}`} key={movie.id} className="movie-card"&gt;
           &lt;div
             className="movie-card"
             style={{ backgroundColor: colors[index % colors.length] }}
@@ -258,7 +258,7 @@ const MovieList = ({ movies, genreData }) =&gt; {
               &lt;p className="movie-title" aria-label='Título de una película'&gt;{movie.original_title}&lt;/p&gt;
               &lt;p className="movie-year"&gt;{movie.release_date.slice(0, 4)}&lt;/p&gt;
               &lt;p className="movie-genres"&gt;
-                &lt;i className="fa-solid fa-film" style={{ color: "#ba12a3" }}&gt;&lt;/i&gt; Géneros: {movie.genre_ids.map(<span class="fstat-no" title="function not covered" >(g</span>enreId) =&gt; <span class="cstat-no" title="statement not covered" >genreMap[genreId])</span>.join(', ')}
+                &lt;i className="fa-solid fa-film" style={{ color: "#ba12a3" }}&gt;&lt;/i&gt; Géneros: {movie.genre_ids.map((genreId) =&gt; genreMap[genreId]).join(', ')}
               &lt;/p&gt;
               &lt;p className="movie-vote-average"&gt;&lt;i className="fa-solid fa-square-poll-vertical" style={{ color: "#ba12a3" }}&gt;&lt;/i&gt; Promedio de votación: {movie.vote_average}&lt;/p&gt;
               &lt;p className="movie-vote-count"&gt;&lt;i className="fa-solid fa-star" style={{ color: "#ba12a3" }}&gt;&lt;/i&gt; Total de votos: {movie.vote_count}&lt;/p&gt;
@@ -283,7 +283,7 @@ export default MovieList;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-10-31T03:05:18.087Z
+                at 2023-10-31T23:29:05.279Z
             </div>
         <script src="../prettify.js"></script>
         <script>

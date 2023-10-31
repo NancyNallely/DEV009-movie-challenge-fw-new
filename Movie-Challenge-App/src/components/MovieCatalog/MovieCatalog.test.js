@@ -59,6 +59,16 @@ describe('MovieCatalog', () => {
 });
 
 describe('MovieCatalog API calls', () => {
+  let mock;
+
+  beforeEach(() => {
+    mock = new MockAdapter(axios);
+  });
+
+  afterEach(() => {
+    mock.restore();
+  });
+
   it('fetches data and sets movies and total pages on successful API call', async () => {
     const mockMovies = [
       { id: 1, title: 'Movie 1' },
@@ -66,51 +76,51 @@ describe('MovieCatalog API calls', () => {
     ];
     const totalPages = 10;
 
-    // Mock successful response
-    axios.get.mockResolvedValue({
+    // Mock the first API call
+    mock.onGet('https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&api_key=d88c3dce489bfe59e2bf99fbc55f8c24&language=es-MX&page=1&with_genres=&sort_by=popularity.desc').reply(200, {
       data: {
         results: mockMovies,
         total_pages: totalPages,
       },
     });
 
-    // Render the component
-    const { findByText } = render(<MemoryRouter>
-      <MovieProvider>
-        <MovieCatalog />
-      </MovieProvider>
-    </MemoryRouter>);
-
-    // Wait for the API call to complete
-    await act(async () => {
-      // Your assertions go here - check for the presence of fetched movie titles or total pages
-      const totalPagesText = await findByText('Página 1 de 1');
-      expect(totalPagesText).toBeTruthy();
+    // Mock the second API call
+    mock.onGet('https://api.themoviedb.org/3/genre/movie/list?language=es').reply(200, {
+      genres: [{ id: 1, name: 'Action' }, { id: 2, name: 'Comedy' }],
     });
+
+    const { findByText } = render(
+      <MemoryRouter>
+        <MovieProvider>
+          <MovieCatalog />
+        </MovieProvider>
+      </MemoryRouter>
+    );
+
+    const totalPagesText = await findByText('Página 1 de 1');
+    expect(totalPagesText).toBeTruthy();
   });
 
   it('handles error on failed API call', async () => {
-    // Mock error response
-    axios.get.mockRejectedValue(new Error('Failed to fetch data'));
+    // Mock the first API call to simulate an error
+    mock.onGet('https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&api_key=d88c3dce489bfe59e2bf99fbc55f8c24&language=es-MX&page=1&with_genres=&sort_by=popularity.desc').reply(500);
 
-    // Suppress console.error output during test
-    const spy = jest.spyOn(console, 'error').mockImplementation(() => { });
+    // Mock the second API call
+    mock.onGet('https://api.themoviedb.org/3/genre/movie/list?language=es').reply(500);
 
-    // Render the component
-    const { findByText } = render(<MemoryRouter>
-      <MovieProvider>
-        <MovieCatalog />
-      </MovieProvider>
-    </MemoryRouter>);
+    const spy = jest.spyOn(console, 'error').mockImplementation(() => {});
 
-    // Wait for the API call to complete
-    await act(async () => {
-      // Your assertions go here - check for error message handling
-      const errorMessage = await findByText('No hay películas para mostrar.');
-      expect(errorMessage).toBeTruthy();
-    });
+    const { findByText } = render(
+      <MemoryRouter>
+        <MovieProvider>
+          <MovieCatalog />
+        </MovieProvider>
+      </MemoryRouter>
+    );
 
-    // Restore console.error
+    const errorMessage = await findByText('No hay películas para mostrar.');
+    expect(errorMessage).toBeTruthy();
+
     spy.mockRestore();
   });
 });

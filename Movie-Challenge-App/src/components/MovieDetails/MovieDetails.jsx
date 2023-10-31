@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
@@ -26,7 +27,7 @@ function MovieDetails() {
         setMovie(response.data);
       })
       .catch((error) => {
-        console.error(error);
+        
       });
   }, [movieId, selectedGenre, selectedSort]); 
 
