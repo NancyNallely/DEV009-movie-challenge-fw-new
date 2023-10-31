@@ -25,7 +25,7 @@
 
 /* Estilo del póster de película */
 .movie-poster {
-  max-width: 90%; /* Ajusta el tamaño máximo del póster al ancho de la tarjeta */
+  max-width: 80%; /* Ajusta el tamaño máximo del póster al ancho de la tarjeta */
   height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
   border-radius: 8px;
   margin-top: 8%;

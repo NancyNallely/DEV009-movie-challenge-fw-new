@@ -1,26 +1,41 @@
-/* SortMovies.css */
+/* FilterMovies.css */
 
-/* Estilos para SortMovies */
+/* Estilos para FilterMovies */
 .SortMovies {
-    margin-top: 10px; /* Espacio superior más pequeño */
-    text-align: center;
-    font-size: 18px;
+    margin-bottom: 10px; /* Espacio inferior más pequeño */
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f0ebeb;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sutil sombra */
   }
   
   .SortMovies label {
+    font-size: 18px;
+    font-family: 'Aclonica', sans-serif;
     font-weight: bold;
-    margin-right: 10px;
+    display: block;
+    margin-bottom: 8px; /* Espacio inferior más pequeño */
   }
   
   .SortMovies select {
+    width: 100%;
     padding: 10px;
-    font-size: 16px;
-    border: 2px solid #a6c4e1;
+    font-size: 18px;
+    font-family: 'Aclonica', sans-serif;
+    border: 2px solid #4b0959;
     border-radius: 5px;
-    background-color: #f4f8fa;
+    background-color: #cdb3d1;
   }
   
   .SortMovies select:hover {
-    border-color: #4f91c3;
+    border-color: #c7afd0;
     transition: border-color 0.3s;
+  }
+
+  .SortMovies p {
+    font-size: 14px;
+    font-family: 'Aclonica', sans-serif;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px; /* Espacio inferior más pequeño */
   }

@@ -2,19 +2,17 @@
 
 Todas las actualizaciones importantes del proyecto se documentan en este archivo.
 
-## [Versión 0.2.2] - 2023-10-30
+## [Versión 0.3.3] - 2023-10-30
 
 ### Sprint learning
-
+Aprendi a como crear y proporcionar un contexto que almacena y comparte datos  como selectedGenre y selectedSort en la aplicación.
 
 ### Changed
 - Se agrega el componente MovieContext
+- Se modificaron algunos estilos de los componentes en general
 
 ### Added
-- Se da estilo al componente Home en css
-- Se agrega componente de la hu3
-- Se agregan estilos en css para la hu3
-- Se agregan test de la hu1 y de la hu2
+- Se agregan algunos test de la hu3
 - Se agrega actualización de cambios en Changelog
 
 ## [Versión 0.2.2] - 2023-10-24

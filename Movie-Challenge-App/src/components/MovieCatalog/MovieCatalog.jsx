@@ -35,7 +35,7 @@ const MovieCatalog = () => {
       });
 
     // Solo ejecutar la llamada a la API de géneros la primera vez
-    if (genreData.length === 0) {
+    if (genreData !== undefined && genreData.length === 0) {
       const genreApiUrl = 'https://api.themoviedb.org/3/genre/movie/list?language=es';
       axios.get(genreApiUrl, { headers })
         .then((response) => {

@@ -1,7 +1,7 @@
 /* MovieDetails.css */
 .movie-details-container {
   display: grid;
-  background-color: rgba(242, 206, 241, 0.987);
+  background-color: rgba(224, 192, 209, 0.298);
   grid-template-columns: 1fr 2fr; /* Dos columnas, una para la imagen y otra para la información */
   align-items: center;
   text-align: center;
@@ -45,32 +45,12 @@
   text-align: justify;
   font-size: 15px;
   font-family: 'Aclonica', sans-serif;
-  color: #ffffff;
+  color: #3e2c10;
   padding: 20px;
   background-color: #602e6c36;
-  box-shadow: 4px 4px 10px rgba(184, 19, 109, 0.365);
+  box-shadow: 8px 8px 20px rgba(82, 11, 102, 0.5); /* Aumentamos la difuminación y el desplazamiento */
   width: 80%;
-  animation: borderFlash 4s linear infinite;
 }
-
-@keyframes borderFlash {
-  0% {
-    box-shadow: -4px -4px 10px rgba(184, 19, 109, 0.365);
-  }
-  25% {
-    box-shadow: 4px -4px 10px rgba(184, 19, 109, 0.365);
-  }
-  50% {
-    box-shadow: 4px 4px 10px rgba(184, 19, 109, 0.365);
-  }
-  75% {
-    box-shadow: -4px 4px 10px rgba(184, 19, 109, 0.365);
-  }
-  100% {
-    box-shadow: -4px -4px 10px rgba(184, 19, 109, 0.365);
-  }
-}
-
 
 /* Estilos para la sinopsis */
 .movie-details-container .movie-description {
