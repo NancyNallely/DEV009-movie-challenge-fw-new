@@ -23,7 +23,7 @@ describe('Pagination', () => {
   });
 
   // Renders the pagination component with the correct props
-  it('should render the pagination component with the correct props', () => {
+  it('debería representar el componente de paginación con los accesorios correctos', () => {
     // Arrange
     const currentPage = 1;
     const totalPages = 5;
@@ -39,7 +39,7 @@ describe('Pagination', () => {
   });
 
   // Displays the current page and total number of pages
-  it('should display the current page and total number of pages', () => {
+  it('debe mostrar la página actual y el número total de páginas', () => {
     // Arrange
     const currentPage = 3;
     const totalPages = 10;
@@ -53,7 +53,7 @@ describe('Pagination', () => {
   });
 
   // Disables the "Previous" button if current page is 1
-  it('should disable the "Previous" button if current page is 1', () => {
+  it('debe desactivar el botón "Anterior" si la página actual es 1', () => {
     // Arrange
     const currentPage = 1;
     const totalPages = 5;
@@ -67,7 +67,7 @@ describe('Pagination', () => {
   });
 
   // Renders the pagination component with currentPage and totalPages as 0
-  it('should render the pagination component with currentPage and totalPages as 0', () => {
+  it('debería representar el componente de paginación con currentPage y totalPages como 0', () => {
     // Arrange
     const currentPage = 0;
     const totalPages = 0;
@@ -80,7 +80,7 @@ describe('Pagination', () => {
     expect(screen.getByText('Página 0 de 0')).toBeTruthy();
   });
 
-  it('disables previous button when currentPage is 1', () => {
+  it('desactiva el botón anterior cuando la página actual es 1', () => {
     const onPageChangeMock = jest.fn();
     const { getByText } = render(
       <Pagination currentPage={1} totalPages={10} onPageChange={onPageChangeMock} />
@@ -90,7 +90,7 @@ describe('Pagination', () => {
     expect(previousButton.disabled).toBe(true);
   });
 
-  it('disables next button when currentPage is equal to totalPages', () => {
+  it('deshabilita el botón siguiente cuando currentPage es igual a totalPages', () => {
     const onPageChangeMock = jest.fn();
     const { getByText } = render(
       <Pagination currentPage={10} totalPages={10} onPageChange={onPageChangeMock} />
@@ -100,7 +100,7 @@ describe('Pagination', () => {
     expect(nextButton.disabled).toBe(true);
   });
 
-  it('calls onPageChange when previous/next buttons are clicked', () => {
+  it('llama a onPageChange cuando se hace clic en los botones anterior/siguiente', () => {
     const onPageChangeMock = jest.fn();
     const { getByText } = render(
       <Pagination currentPage={5} totalPages={10} onPageChange={onPageChangeMock} />

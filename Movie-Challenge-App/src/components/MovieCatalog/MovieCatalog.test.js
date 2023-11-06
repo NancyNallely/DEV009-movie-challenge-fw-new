@@ -69,7 +69,7 @@ describe('MovieCatalog API calls', () => {
     mock.restore();
   });
 
-  it('fetches data and sets movies and total pages on successful API call', async () => {
+  it('recupera datos y configura películas y páginas totales en una llamada API exitosa', async () => {
     const mockMovies = [
       { id: 1, title: 'Movie 1' },
       { id: 2, title: 'Movie 2' },
@@ -101,7 +101,7 @@ describe('MovieCatalog API calls', () => {
     expect(totalPagesText).toBeTruthy();
   });
 
-  it('handles error on failed API call', async () => {
+  it('maneja el error en una llamada API fallida', async () => {
     // Mock the first API call to simulate an error
     mock.onGet('https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&api_key=d88c3dce489bfe59e2bf99fbc55f8c24&language=es-MX&page=1&with_genres=&sort_by=popularity.desc').reply(500);
 

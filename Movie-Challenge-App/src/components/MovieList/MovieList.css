@@ -42,7 +42,7 @@
 .movie-info {
   margin-top: 10px;
   font-weight: bold;
-  font-size: 14px; /* Reducimos el tamaño de la información */
+  font-size: 12px; /* Reducimos el tamaño de la información */
   font-family: 'Aclonica', sans-serif;
   text-decoration: none;
   color: #270622;

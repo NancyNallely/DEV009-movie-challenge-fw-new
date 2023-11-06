@@ -44,7 +44,7 @@ describe('MovieList', () => {
   });
 
 
-  it('should render a list of movies with their respective information', () => {
+  it('debería renderizar una lista de películas con su respectiva información', () => {
     const genreData = [
       { id: 1, name: 'Genre 1' },
       { id: 2, name: 'Genre 2' },

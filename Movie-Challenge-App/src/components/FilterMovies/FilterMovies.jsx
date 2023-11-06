@@ -5,13 +5,16 @@ const FilterMovies = ({ genres, selectedGenre, onGenreChange }) => {
   return (
     <div className="FilterMovies">
       <label htmlFor="genreSelect"><i className="fa-solid fa-filter" style={{ color: "#ba12a3" }}></i> Filtrar por Género:</label>
-      <select id="genreSelect" aria-label="Género" value={selectedGenre} onChange={onGenreChange}>
+      <select data-testid="genreSelect" id="genreSelect" aria-label="Género" value={selectedGenre} onChange={onGenreChange}>
         <option value="">Todos los géneros</option>
-        {genres && genres.map((genre) => (
-          <option key={genre.id} value={genre.id}>
-            {genre.name}
-          </option>
-        ))}
+        {genres
+          ? genres.map((genre) => (
+            <option key={genre.id} value={genre.id}>
+              {genre.name}
+            </option>
+          ))
+          : null
+        }
       </select>
     </div>
   );

@@ -1,33 +1,77 @@
-import { render, fireEvent, screen } from '@testing-library/react';
-
+import { render, screen, fireEvent } from '@testing-library/react';
 import FilterMovies from './FilterMovies';
 
-// Definir una función mock para la función onGenreChange
-const mockOnGenreChange = jest.fn();
-
-const sampleGenres = [
+describe('Componente FilterMovies', () => {
+  const genres = [
     { id: 1, name: 'Acción' },
     { id: 2, name: 'Comedia' },
-    { id: 3, name: 'Drama' },
-];
+  ];
 
-describe('FilterMovies', () => {
-    test('debería renderizar correctamente', () => {
-        render(<FilterMovies genres={sampleGenres} selectedGenre="" onGenreChange={mockOnGenreChange} />);
+  // Define una función ficticia para simular el evento onChange
+  const onGenreChange = jest.fn();
 
-        // Verificar que los elementos de la interfaz estén presentes en el DOM
-        expect(screen.getByText('Filtrar por Género:')).not.toBeNull();
-        expect(screen.getByLabelText('Filtrar por Género:')).not.toBeNull();
-        expect(screen.getByText('Todos los géneros')).not.toBeNull();
-    });
+  it('se renderiza sin problemas', () => {
+    render(<FilterMovies genres={genres} selectedGenre="" onGenreChange={onGenreChange} />);
+    const filterMoviesElement = screen.getByTestId('genreSelect');
+    expect(filterMoviesElement).toBeTruthy();
+  });
 
-    test('debería llamar a la función onGenreChange al seleccionar un género', () => {
-        render(<FilterMovies genres={sampleGenres} selectedGenre="" onGenreChange={mockOnGenreChange} />);
+  it('muestra la etiqueta y el elemento select', () => {
+    render(<FilterMovies genres={genres} selectedGenre="" onGenreChange={onGenreChange} />);
+    const labelElement = screen.getByText('Filtrar por Género:');
+    const selectElement = screen.getByRole('combobox', { name: 'Género' });
+    expect(labelElement).toBeTruthy();
+    expect(selectElement).toBeTruthy();
+  });
 
-        fireEvent.change(screen.getByLabelText('Filtrar por Género:'), {
-            target: { value: '1' }, // Simular selección de género "Acción"
-        });
+  it('renderiza opciones de género basadas en las props', () => {
+    render(<FilterMovies genres={genres} selectedGenre="" onGenreChange={onGenreChange} />);
+    const actionOption = screen.getByText('Acción');
+    const comedyOption = screen.getByText('Comedia');
+    expect(actionOption).toBeTruthy();
+    expect(comedyOption).toBeTruthy();
+  });
 
-        expect(mockOnGenreChange).toBeTruthy();
-    });
+  it('maneja el evento onChange', () => {
+    render(<FilterMovies genres={genres} selectedGenre="" onGenreChange={onGenreChange} />);
+
+    const selectElement = screen.getByRole('combobox', { name: 'Género' });
+
+    fireEvent.change(selectElement, { target: { value: '1' } });
+    expect(onGenreChange).toHaveBeenCalled();
+
+    fireEvent.change(selectElement, { target: { value: '2' } });
+    expect(onGenreChange).toHaveBeenCalled();
+  });
 });
+
+describe('Componente FilterMovies', () => {
+    it('renderiza opciones de género correctamente cuando se proporcionan géneros', () => {
+      const genres = [
+        { id: 1, name: 'Acción' },
+        { id: 2, name: 'Comedia' },
+      ];
+  
+      const { getByText } = render(<FilterMovies genres={genres} selectedGenre="" onGenreChange={() => {}} />);
+  
+      // Asegurarse de que las opciones se rendericen correctamente
+      const option1 = getByText('Acción');
+      const option2 = getByText('Comedia');
+      const defaultOption = getByText('Todos los géneros');
+  
+      expect(option1).toBeTruthy();
+      expect(option2).toBeTruthy();
+      expect(defaultOption).toBeTruthy();
+    });
+  
+    it('no renderiza opciones de género cuando no se proporcionan géneros', () => {
+      const { queryByText } = render(<FilterMovies genres={null} selectedGenre="" onGenreChange={() => {}} />);
+  
+      // Asegurarse de que las opciones no se rendericen
+      const option1 = queryByText('Acción');
+      const option2 = queryByText('Comedia');
+  
+      expect(option1).toBeNull();
+      expect(option2).toBeNull();
+    });
+  });

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1698794945544" clover="3.2.0">
-  <project timestamp="1698794945545" name="All files">
+<coverage generated="1699280155098" clover="3.2.0">
+  <project timestamp="1699280155099" name="All files">
     <metrics statements="106" coveredstatements="102" conditionals="21" coveredconditionals="18" methods="29" coveredmethods="25" elements="156" coveredelements="145" complexity="0" loc="106" ncloc="106" packages="9" files="9" classes="9"/>
     <package name="FilterMovies">
       <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
@@ -9,9 +9,9 @@
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
-        <line num="11" count="6" type="stmt"/>
-        <line num="20" count="2" type="stmt"/>
-        <line num="26" count="6" type="stmt"/>
+        <line num="12" count="10" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="29" count="10" type="stmt"/>
       </file>
     </package>
     <package name="Home">
