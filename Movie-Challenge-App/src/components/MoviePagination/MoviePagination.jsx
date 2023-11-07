@@ -11,6 +11,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
   return (
     <div className="pagination">
       <button
+      data-testid="page-input"
         onClick={() => onPageChange(currentPage - 1)}
         disabled={isPreviousDisabled}
       >

@@ -22,61 +22,54 @@ describe('Pagination', () => {
     expect(nextButton).toBeTruthy();
   });
 
-  // Renders the pagination component with the correct props
+  // Representa el componente de paginación con los accesorios correctos.
   it('debería representar el componente de paginación con los accesorios correctos', () => {
-    // Arrange
+    
     const currentPage = 1;
     const totalPages = 5;
     const onPageChange = jest.fn();
 
-    // Act
+    
     render(<Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={onPageChange} />);
 
-    // Assert
     expect(screen.getByText(`Página ${currentPage} de ${totalPages}`)).toBeTruthy();
     expect(screen.getByText('Anterior')).toBeTruthy();
     expect(screen.getByText('Siguiente')).toBeTruthy();
   });
 
-  // Displays the current page and total number of pages
+  // Muestra la página actual y el número total de páginas.
   it('debe mostrar la página actual y el número total de páginas', () => {
-    // Arrange
+ 
     const currentPage = 3;
     const totalPages = 10;
     const onPageChange = jest.fn();
 
-    // Act
     render(<Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={onPageChange} />);
 
-    // Assert
     expect(screen.getByText(`Página ${currentPage} de ${totalPages}`)).toBeTruthy();
   });
 
-  // Disables the "Previous" button if current page is 1
+  // Desactiva el botón "Anterior" si la página actual es 1
   it('debe desactivar el botón "Anterior" si la página actual es 1', () => {
-    // Arrange
+  
     const currentPage = 1;
     const totalPages = 5;
     const onPageChange = jest.fn();
 
-    // Act
     render(<Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={onPageChange} />);
 
-    // Assert
     expect(screen.getByText('Anterior')).toBeTruthy();
   });
 
-  // Renders the pagination component with currentPage and totalPages as 0
+  // Representa el componente de paginación con currentPage y totalPages como 0
   it('debería representar el componente de paginación con currentPage y totalPages como 0', () => {
-    // Arrange
+ 
     const currentPage = 0;
     const totalPages = 0;
     const onPageChange = jest.fn();
 
-    // Act
     render(<Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={onPageChange} />);
 
-    // Assert
     expect(screen.getByText('Página 0 de 0')).toBeTruthy();
   });
 
