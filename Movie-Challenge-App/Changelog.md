@@ -8,11 +8,11 @@ Todas las actualizaciones importantes del proyecto se documentan en este archivo
 Realice test con testing-library-react y jest, creo estoy contenta con los resultados pude cubrir casi la totalidad solicitada en porcentaje.
 
 ### Changed
-- Se agrega archivo para configuracion de vercel y poder hacer deploy
+- Se agrega archivo para configuracion de vercel y poder hacer deploy.
 
-### Added
-- Se agregan test pendientes de la hu3
-- Se agrega actualización de cambios en Changelog
+### Added 
+- Se agregan test pendientes de la hu3.
+- Se agrega actualización de cambios en Changelog.
 
 ## [Versión 0.3.3] - 2023-10-30
 
