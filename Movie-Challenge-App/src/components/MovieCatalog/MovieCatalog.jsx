@@ -31,7 +31,7 @@ const MovieCatalog = () => {
         setTotalPages(response.data.total_pages);
       })
       .catch((error) => {
-        console.error('Error al obtener la lista de películas', error);
+        console.info('Error al obtener la lista de películas', error);
       });
 
     // Solo ejecutar la llamada a la API de géneros la primera vez
@@ -42,7 +42,7 @@ const MovieCatalog = () => {
           setGenreData(response.data.genres);
         })
         .catch((error) => {
-          console.error('Error al obtener datos de géneros', error);
+          console.info('Error al obtener datos de géneros', error);
         });
     }
   }, [page, selectedGenre, selectedSort, genreData]);

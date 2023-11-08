@@ -40,6 +40,7 @@ function MovieDetails() {
       <Link to="/Movies" className="back-link">
         <i className="fa-solid fa-left-long" style={{ color: "#ba12a3" }}></i> Volver al listado de películas
       </Link>
+
       <div className="movie-image">
         <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} className="movie-poster" />
       </div>

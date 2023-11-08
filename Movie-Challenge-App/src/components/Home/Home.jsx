@@ -6,6 +6,7 @@ const Home = () => {
     <div className="main-content">
       <div className="overlay"></div>
       <h1 className="title-3d">Bienvenidos a Adicción Visual</h1>
+
       <div className="content-center">
         <p className="manuscrito typing-animation">
           La pasión por ver es una adicción, descubre tus próximas películas favoritas con nosotros
